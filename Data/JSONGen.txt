@@ -1,0 +1,53 @@
+Meetings =
+
+[
+  '{{repeat(20, 30)}}',
+
+  {
+    first_name: '{{firstName()}}',
+    last_name: '{{surname()}}',
+    role: '{{company()}}',
+    room_name: '{{firstName()}}',
+    company_name: '{{company()}}',
+    meeting_logo: '{{random(["Blue"],["Black"],["Brown"],["White"])}}',
+    date: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-dd")}}',
+    time_start: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-dd")}}'
+  }
+]
+
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+Birthdays =
+
+[
+  '{{repeat(20, 30)}}',
+
+  {
+    first_name: '{{firstName()}}',
+    last_name: '{{surname()}}',
+    role: '{{company()}}',
+    employee_since: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-dd")}}',
+    cake_time: '{{date(new Date(2014, 0, 1), new Date(), "hh:mm")}}',
+    birthday: '{{date(new Date(1987, 0, 1), new Date(), "YYYY-MM-dd")}}'
+  }
+]
+
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+Events =
+
+[
+  '{{repeat(20, 30)}}',
+
+  {
+    title: '{{firstName()}}',
+    room: '{{surname()}}',
+    date: '{{date(new Date(2014, 0, 1), new Date(), "YYYY-MM-dd")}}',
+    time_start: '{{date(new Date(2014, 0, 1), new Date(), "hh:mm")}}',
+    time_end: '{{date(new Date(1987, 0, 1), new Date(), "hh:mm")}}',
+    time_other: '{{random(["Later Today"],["Evening Break"],["Now!"],["Ongoing!"])}}',
+    icon: '../images/image-{{integer([0],[15])}}'
+  }
+]
