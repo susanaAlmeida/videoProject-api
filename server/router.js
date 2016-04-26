@@ -2,9 +2,7 @@ import express from 'express'
 import Pages from './routes/pages'
 import User from './routes/user'
 import Auth from './routes/auth'
-import Birthday from './routes/birthday'
-import Event from './routes/event'
-import Meeting from './routes/meeting'
+import Video from './routes/video'
 
 export default () => {
   let router = express.Router()
@@ -12,9 +10,7 @@ export default () => {
   Pages(router)
   Auth(router)
   User(router)
-  Birthday(router)
-  Event(router)
-  Meeting(router)
+  Video(router)
 
   return router
 }

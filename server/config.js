@@ -1,4 +1,4 @@
 module.exports = {
-  'secret': 'tekzenit-9th-floor-api',
+  'secret': 'tekzenit-video-api',
   'database': 'mongodb://localhost/api'
 }

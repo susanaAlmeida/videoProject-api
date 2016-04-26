@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "seed": "mongoimport --db api --collection birthdays --jsonArray data/birthdays.json; mongoimport --db api --collection events --jsonArray data/events.json; mongoimport --db api --collection meetings --jsonArray data/meetings.json; curl http://localhost:8080/users/seed"
+    "seed": "mongoimport --db api --collection videos --jsonArray data/videos.json; curl http://localhost:8080/users/seed"
   },
   "keywords": [],
   "author": "Pedro Brás",
@@ -20,7 +20,7 @@
     "morgan": "^1.7.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.7.5",
+    "babel-cli": "^6.7.7",
     "bcrypt": "^0.8.5",
     "moment": "^2.13.0"
   }
